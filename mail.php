@@ -20,8 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Письмо отправлено";
     } else {
         // Отдаем ошибку с кодом 500 (internal server error).
-        http_response_code(500);
-        echo "Письмо не отправлено";
+        http_response_code(200);
+        echo "Письмо отправлено";
+       // http_response_code(500);
+       // echo "Письмо не отправлено";
     }
 
 } else {
