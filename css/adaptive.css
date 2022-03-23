@@ -1,0 +1,1133 @@
+@media screen and (max-width: 1142px) {
+    #main #main-container {
+        gap: 55px;
+    }
+
+    #about #about-container #about-assurance {
+        grid-template-columns: 630px 535px;
+    }
+
+    #about #about-container #about-assurance .block {
+        padding: 70px 51px 136px 51px;
+    }
+
+    #gift #gift-container .block {
+        margin-right: 12px;
+    }
+}
+
+@media screen and (max-width: 1126px) {
+    #main #main-container {
+        gap: 50px;
+    }
+}
+
+/*1024 - 1199*/
+@media screen and (max-width: 1199px) {
+    #header-container, #main-container, #about-container,
+    #products-container, #gift-container, #form-container,
+    #reviews-container, #contacts-container, #footer-container, #call-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #main #main-container {
+        gap: 40px;
+        grid-template-columns: 600px auto;
+    }
+
+    #main #main-container #main-image {
+        top: 106px;
+    }
+
+    #about #about-container #about-company {
+        grid-template-columns: 545px auto;
+    }
+
+    #about #about-container #about-company #block-image img {
+        width: 100%;
+    }
+
+    #about #about-container #about-assurance {
+        grid-template-columns: 610px auto;
+    }
+
+    #about #about-container #about-assurance #block-image2 img {
+        width: 600px;
+    }
+
+    #about #about-container #about-assurance .block {
+        padding: 70px 41px 136px 41px
+    }
+
+    .splide__list {
+        padding-right: 20px !important;
+    }
+
+    #all-review-track {
+        padding-right: 20px !important;
+    }
+
+    .slick-slide .slick-current .slick-active {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1067px) {
+    #main #main-container #main-image {
+        left: 28px;
+        top: 116px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #reviews #reviews-container #all-review .review {
+        max-width: 310px;
+    }
+
+    .splide__pagination {
+        bottom: -78px;
+    }
+
+    .splide__arrow--prev {
+        left: 40%;
+    }
+
+    .splide__arrow--next {
+        right: 40%;
+    }
+}
+
+/*768 - 1023*/
+@media screen and (max-width: 1023px) {
+
+    #header #menu a {
+        margin-left: 20px;
+    }
+
+    #main #main-container h1 {
+        text-align: center;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: unset;
+    }
+
+    #main #main-container #main-image {
+        position: unset;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: unset;
+        margin: 0 auto;
+    }
+
+    #main #main-container .card {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    #about #about-container #about-company {
+        gap: 40px;
+    }
+
+    #about #about-container .block-title {
+        display: none;
+    }
+
+    .about-title {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #about #about-container #about-company #block-image {
+        position: unset;
+        margin: 0 auto;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #about #about-container #about-company #block-image img {
+        width: 100%;
+    }
+
+    .block-text {
+        text-align: center;
+    }
+
+    #about #about-container .block {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: 545px;
+        margin: 0 auto;
+    }
+
+    #about #about-container #about-assurance {
+        gap: 40px;
+    }
+
+    #about #about-container #about-assurance #block-image2 {
+        margin: 0 auto;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #about #about-container #about-assurance #block-image2 img {
+        width: 100%;
+    }
+
+    #about #about-container #about-assurance .block {
+        position: unset;
+        padding: 50px 24px 30px 24px;
+    }
+
+    #products #products-container h2.block-title {
+        text-align: center;
+    }
+
+    #products #products-container .card {
+        margin: 20px auto;
+    }
+
+    .slick-prev {
+        left: 32%;
+    }
+
+    .slick-next {
+        right: 32%;
+    }
+
+    #gift #gift-container .about-title {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #gift #gift-container {
+        display: grid;
+        grid-template-columns: 450px auto;
+        justify-content: center;
+        grid-template-rows: auto;
+        gap: 40px;
+    }
+
+    #gift #gift-container .block-title {
+        display: none;
+    }
+
+    #gift #gift-container #gift-images {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-bottom: 40px;
+    }
+
+    #gift #gift-container .block {
+        padding: 50px 43px 30px 43px;
+        max-width: 550px;
+        margin: 0 auto;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #form #form-container #form-info #form-image img {
+        width: 100%;
+    }
+
+    #form #form-container #form-info #registration #bike-choice::after {
+        right: 32%;
+    }
+
+    #reviews #reviews-container h2.block-title {
+        text-align: center;
+    }
+
+    #reviews #reviews-container #all-review .review {
+        max-width: unset;
+    }
+
+    .splide__pagination {
+        bottom: -66px;
+    }
+
+    #contacts #contacts-container {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    #contacts #contacts-container #contacts-image {
+        order: 2;
+        margin: 0 auto;
+    }
+
+    #contacts #contacts-container #contacts-info .block-title {
+        text-align: center;
+    }
+
+    #contacts #contacts-container #contacts-info {
+        margin: 0 auto;
+    }
+
+    #contacts #contacts-container #contacts-info #contacts-block {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    #form-image {
+        display: none;
+    }
+
+    #form #form-container #form-info {
+        margin: 0 auto;
+    }
+
+    #registration {
+        text-align: center;
+    }
+
+    #form #form-container #form-info h2 {
+        text-align: center;
+    }
+
+    #form #form-container #form-info #form-text {
+        text-align: center;
+    }
+
+    #form #form-container #form-info #thanks {
+        text-align: center;
+    }
+
+    #form #form-container #form-info #registration #bike-choice select {
+        margin: 0 auto;
+    }
+
+    #form #form-container #form-info #registration #chek #chek-block {
+        justify-content: center;
+    }
+
+    .checkbox_label::before, .checkbox_label2::before {
+        left: 67px;
+    }
+
+    .checkbox_label::after, .checkbox_label2::after {
+        left: 68px;
+    }
+
+    #form #form-container #form-info #registration .registration-error, .check-error {
+        margin: 0 0 15px 67px;
+    }
+
+    #form #form-container #form-info #registration label {
+        margin-right: 125px;
+    }
+
+    #form #form-container #form-info #registration #bike-choice label {
+        margin-right: 189px;
+    }
+
+    #form #form-container #form-info #registration .checkbox_label {
+        margin-right: unset;
+    }
+
+    .splide__pagination {
+        bottom: -69px;
+    }
+
+    #form #form-container #form-info #registration #bike-choice::after {
+        right: 20%;
+    }
+
+    .slick-next {
+        right: 30%;
+    }
+
+    .slick-prev {
+        left: 30%;
+    }
+
+    .splide__arrow--prev {
+        left: 39%
+    }
+
+    .splide__arrow--next {
+        right: 39%
+    }
+}
+
+@media screen and (max-width: 855px) {
+
+    .slick-next {
+        right: 29%;
+    }
+
+    .slick-prev {
+        left: 29%;
+    }
+
+    #products #products-container .card {
+        max-width: 330px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    .slick-next {
+        right: 27%;
+    }
+
+    .slick-prev {
+        left: 27%;
+    }
+
+    .splide__arrow--prev {
+        left: 38%
+    }
+
+    .splide__arrow--next {
+        right: 38%
+    }
+
+    #products #products-container .card {
+        max-width: 310px;
+    }
+}
+
+@media screen and (max-width: 827px) {
+    .splide__pagination {
+        bottom: -73px;
+    }
+}
+
+/*580 - 767*/
+@media screen and (max-width: 767px) {
+
+    #header #header-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #header #header-container .logo {
+        justify-self: start;
+    }
+
+    #menu {
+        order: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0 auto;
+    }
+
+    #header #menu a {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    #header #menu a:first-child {
+        margin-left: unset;
+    }
+
+    #header #phone {
+        justify-self: end;
+    }
+
+    #call-container .card {
+        max-width: 580px;
+    }
+
+    #main #main-container {
+        grid-template-columns: auto;
+    }
+
+    #main #main-container h1 {
+        font-size: 45px;
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #main #main-container #main-image {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #main #main-container .card {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #main #main-container #main-image img {
+        width: 100%;
+    }
+
+    #about #about-container #about-company {
+        grid-template-columns: auto;
+    }
+
+    #about #about-container .about-title {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #about #about-container #about-company #block-image {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #about #about-container .block {
+        max-width: 500px;
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #about #about-container #about-assurance {
+        grid-template-columns: auto;
+    }
+
+    #about #about-container #about-assurance #block-image2 {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #gift #gift-container {
+        grid-template-columns: auto;
+    }
+
+    #gift #gift-container .about-title {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #gift #gift-container .block {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    #gift #gift-container #gift-images {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    .slick-next {
+        right: 24%;
+    }
+
+    .slick-prev {
+        left: 24%;
+    }
+
+    .splide__arrow--prev {
+        left: 36%
+    }
+
+    .splide__arrow--next {
+        right: 36%
+    }
+
+    .splide__pagination {
+        bottom: -75px;
+    }
+
+    #products #products-container .card {
+        max-width: 270px;
+    }
+
+    #contacts #contacts-container #contacts-image img {
+        width: 100%;
+    }
+
+    #contacts #contacts-container #contacts-info #contacts-block {
+        gap: 32px;
+    }
+
+    #footer #footer-container #footer-menu {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100px;
+    }
+
+    .footer-menu-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 98px;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    #products #products-container .card {
+        max-width: 360px;
+    }
+
+    .slick-prev {
+        left: 10%;
+    }
+
+    .slick-next {
+        right: 10%;
+    }
+
+    .slick-dots li {
+        width: 20px;
+    }
+
+    #reviews #reviews-container #all-review .review {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 580px;
+    }
+
+    .splide__arrow--prev {
+        left: 20%;
+    }
+
+    .splide__arrow--next {
+        right: 20%;
+    }
+
+    .splide__pagination {
+        bottom: -66px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    #contacts #contacts-container #contacts-info #contacts-block {
+        gap: 19px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+
+    #contacts #contacts-container #contacts-info #contacts-block {
+        grid-template-columns: auto;
+    }
+
+    #contacts #contacts-container #contacts-info .contacts-text {
+        text-align: center;
+        margin-bottom: unset;
+    }
+
+    #contacts #contacts-container #contacts-info .block-title {
+        margin-bottom: 40px;
+    }
+
+    #contacts #contacts-container #contacts-info .contacts-text:last-child {
+        margin-bottom: 30px;
+    }
+
+    .splide__arrow--prev {
+        left: 15%;
+    }
+
+    .splide__arrow--next {
+        right: 15%;
+    }
+
+    .splide__pagination {
+        bottom: -70px;
+    }
+
+    .slick-prev {
+        left: 3%;
+    }
+
+    .slick-next {
+        right: 3%;
+    }
+
+    #header #menu a {
+        margin-left: 20px;
+    }
+
+    #call-container .card {
+        max-width: 480px;
+    }
+
+    #gift #gift-container #gift-image2 {
+        left: 113px;
+    }
+}
+
+/*320 - 479*/
+@media screen and (max-width: 479px) {
+
+    #header #menu, #phone {
+        display: none;
+    }
+
+    #header #burger {
+        display: block;
+    }
+
+    #header.menu-open #menu {
+        width: auto;
+        display: grid;
+        grid-template-columns: 320px;
+        justify-self: center;
+    }
+
+    #header.menu-open {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    #menu {
+        top: 74px;
+        position: fixed;
+        background: rgba(255, 255, 255);
+        z-index: 4;
+        text-align: center;
+        padding: 20px 0 30px 0;
+    }
+
+    #header #menu a{
+        margin-left: unset;
+    }
+
+    #header #phone {
+        display: none;
+    }
+
+    #main {
+        margin-bottom: 80px;
+    }
+
+    #main #main-container {
+        gap: 40px;
+    }
+
+    #main #main-container h1 {
+        font-size: 36px;
+    }
+
+    #main #main-container .card {
+        max-width: 280px;
+        padding: 30px 20px;
+    }
+
+    #main #main-container .card-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #main #main-container .card-old-price {
+        margin-top: 30px;
+    }
+
+    #main #main-container .card-new-price {
+        margin-bottom: 20px;
+    }
+
+    #main #main-container #card-gift {
+        margin: 0 auto 30px auto;
+    }
+
+    .btn {
+        padding: 22px 85px 22px 85px;
+    }
+
+    .about-title {
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #about #about-container .block {
+        padding: 30px 20px 10px 20px;
+        order: 2;
+    }
+
+    .block-text {
+        font-size: 14px;
+    }
+
+    #about #about-container #about-assurance {
+        gap: 20px;
+        margin-top: 90px;
+    }
+
+    #about #about-container #about-assurance .block {
+        position: unset;
+        padding: 30px 20px 10px 20px;
+    }
+
+    #about #about-container #about-assurance .block-text {
+        text-align: center;
+    }
+
+    #products {
+        margin-bottom: unset;
+    }
+
+    #products #products-container h2.block-title {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 40px;
+    }
+
+    #products #products-container .product-card {
+        width: 100%;
+    }
+
+    #products #products-container .card-title {
+        font-size: 18px;
+    }
+
+    #products #products-container .card-text {
+        font-size: 14px;
+    }
+
+    #products #products-container .btn {
+        padding: 12px 27px 12px 27px;
+        font-size: 16px;
+    }
+
+    #products #products-container .card {
+        padding: 25px 15px 25px 15px;
+    }
+
+    #products #products-container .card-image {
+        height: unset;
+        margin-bottom: 25px;
+    }
+
+    #products #products-container #product-btn {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .slick-slide {
+        width: unset;
+    }
+
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+
+    .slick-dots li button {
+        display: none;
+    }
+
+    #gift {
+        margin-top: 80px;
+    }
+
+    #gift #gift-container #gift-image2 {
+        top: 117px;
+        left: 15px;
+    }
+
+    #gift #gift-container #gift-image2 img {
+        width: 100%;
+    }
+
+    #gift #gift-container #gift-images img {
+        width: 100%;
+    }
+
+    #gift #gift-container .block {
+        margin-top: 70px;
+        margin-right: 0;
+        padding: 30px 20px 10px 20px;
+    }
+
+    #gift #gift-container .block-title {
+        display: none;
+    }
+
+    #gift #gift-container .block-text {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #gift #gift-container .about-title {
+        margin: 0 auto;
+    }
+
+    #form {
+        margin-top: 90px;
+    }
+
+    #form #form-container {
+        justify-content: unset;
+    }
+
+    #form #form-container #form-info h2.block-title {
+        font-size: 29px;
+        text-align: center;
+    }
+
+    #form #form-container #form-info #form-text {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #form-image {
+        display: none;
+    }
+
+    #form #form-container #form-info {
+        max-width: 320px;
+    }
+
+    #form #form-container #form-info #registration #bike-choice::after {
+        right: 17px;
+    }
+
+    #form #form-container #form-info #registration #registration-button .btn {
+        padding: 20px 64px;
+    }
+
+    #reviews #reviews-container h2.block-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #reviews {
+        margin-top: 80px;
+        margin-bottom: unset;
+    }
+
+    #reviews #reviews-container #all-review .review {
+        padding: 25px 19px 25px 19px;
+        margin-top: 42px;
+    }
+
+    #reviews #reviews-container #all-review .review-about {
+        margin-left: 15px;
+    }
+
+    #reviews #reviews-container #all-review .review-title {
+        font-size: 16px;
+    }
+
+    #reviews #reviews-container #all-review .review-bike-name {
+        font-size: 14px;
+    }
+
+    #reviews #reviews-container #all-review .review-text {
+        text-align: center;
+    }
+
+    .splide__arrow {
+        display: none;
+    }
+
+    .splide__pagination__page {
+        height: 10px;
+        width: 10px;
+    }
+
+    #contacts {
+        margin-top: 120px;
+    }
+
+    #contacts #contacts-container {
+        flex-wrap: wrap;
+    }
+
+    #contacts #contacts-container #contacts-info {
+        margin: unset;
+    }
+
+    #contacts-block {
+        border-width: 1px;
+        border-color: rgb(94, 28, 10);
+        border-style: solid;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 10px 10px 0 rgb(242 225 221);
+        padding: 32px 43px 32px 43px;
+        margin-top: 40px;
+    }
+
+    #contacts #contacts-container #contacts-info .contacts-text {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 21px;
+    }
+
+    #contacts-image {
+        order: 2;
+        margin-top: 30px;
+        display: none;
+    }
+
+    #contacts #contacts-container #contacts-image2 {
+        display: block;
+        order: 2;
+        margin-top: 30px;
+    }
+
+    #contacts #contacts-container #contacts-image2 img {
+        box-shadow: 10px 10px 0 rgb(242, 225, 221);
+        margin: 0;
+        width: 100%;
+    }
+
+    #contacts-info .block-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #footer #footer-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: unset;
+    }
+
+    #footer-block1 {
+        text-align: center;
+        margin: 0 auto;
+        order: 1;
+    }
+
+    #footer-block1 .footer-text {
+        display: none;
+    }
+
+    #footer-rights {
+        display: none;
+    }
+
+    #footer-block1 .logo {
+        text-align: left;
+    }
+
+    #footer #footer-container #footer-menu {
+        order: 2;
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 42px;
+        margin-bottom: 41px;
+        max-width: 479px;
+        justify-self: center;
+        margin-right: 15px;
+    }
+
+    #footer #footer-container #footer-menu a.footer-text {
+        line-height: 30px;
+    }
+
+    .footer-menu-item {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 120px;
+    }
+
+
+    #footer-rights2 {
+        display: block;
+        order: 5;
+        font-size: 14px;
+        font-family: "MontserratRegular", sans-serif;
+        color: rgb(78, 28, 14);
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    #footer #footer-container .footer-text.add {
+        display: block;
+        text-align: center;
+        order: 3;
+        margin-bottom: 42px;
+    }
+
+    #footer-links {
+        order: 3;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #footer-links .footer-text {
+        display: none;
+    }
+
+    #footer-links .link {
+        margin-right: 40px;
+    }
+
+    #footer-links .link:last-child {
+        margin-right: unset;
+    }
+
+    #arrow {
+        padding: 16px 14px;
+    }
+
+    #arrow svg {
+        width: 25px;
+        height: 15px;
+    }
+
+    .checkbox_label::before, .checkbox_label2::before {
+        left: -2px;
+    }
+
+    .checkbox_label::after, .checkbox_label2::after {
+        left: -2px;
+    }
+
+    #form #form-container #form-info #registration #bike-choice::after {
+        right: 29px;
+    }
+
+    #products #products-container .card {
+        height: auto;
+    }
+
+    #form #form-container #form-info #registration #chek #chek-block {
+        margin-left: 14px;
+    }
+
+    #form #form-container #form-info #registration .registration-error, .check-error {
+        margin: 0 0 15px 12px;
+    }
+}
