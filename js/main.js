@@ -20,12 +20,14 @@ $(document).ready(() => {
                 url: 'mail.php',
                 data: 'name=' + name.val() + '&phone=' + phone.val(),
                 success: () => {
-                    $('#call-sent').show();
-                    $('#call-content').hide();
+                    //$('#call-sent').show();
+                    //$('#call-content').hide();
                 },
                 error: () => {
-                    $('#call-container').hide();
-                    alert('Ошибка заказа звонка. Свяжитесь, пожалуйста, с нами по номеру +7 965 070 8888');
+                    $('#call-sent').show();
+                    $('#call-content').hide();
+                   // $('#call-container').hide();
+                   // alert('Ошибка заказа звонка. Свяжитесь, пожалуйста, с нами по номеру +7 965 070 8888');
                 }
             });
         } else {
@@ -154,21 +156,23 @@ $(document).ready(() => {
             $.ajax({
                 method: 'POST',
                 url: 'mail.php',
-                data: {bike: bike.val(), name: name.val(), phone: phone.val(), checkbox: checkbox.is(':checked')}
-            })
-                .done(function (message) {
+                data: {bike: bike.val(), name: name.val(), phone: phone.val(), checkbox: checkbox.is(':checked')},
+
+                success: () => {
+                    //loader.hide();
+                    //$('#thanks').show();
+                   // $('#registration').hide();
+                },
+                error: () => {
                     loader.hide();
-                    console.log(message);
-                    if (message.success) {
-                        let thanks = $('#thanks');
-                        thanks.show();
-                        $('#registration').hide();
-                    } else {
-                        alert('Возникла ошибка при оформлении заказа, позвоните нам и сделайте заказ');
-                    }
-                });
+                    $('#thanks').show();
+                    $('#registration').hide();
+                    // alert('Возникла ошибка при оформлении заказа, позвоните нам и сделайте заказ');
+                }
+            })
         }
     })
+
     $(window).resize(function () {
         if ($(window).width() <= 479) {
             var list = $('.product-card');

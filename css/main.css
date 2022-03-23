@@ -586,13 +586,19 @@ li.slick-active button {
 #form #form-container #form-info #thanks {
     max-width: 415px;
     display: none;
-    font-size: 40px;
-    line-height: 41px;
+    font-size: 25px;
+    line-height: 44px;
     font-family: "MullerExtraBold", sans-serif;
     color: rgb(160, 74, 51);
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     text-shadow: 2px 3px 0 #F2E1DD;
+    border-width: 1px;
+    border-color: rgb(137, 29, 0);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 0 rgb(242, 225, 221);
+    padding: 40px 43px;
 }
 
 #form #form-container #form-info #registration #bike-choice {
