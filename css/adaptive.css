@@ -1,28 +1,4 @@
-@media screen and (max-width: 1142px) {
-    #main #main-container {
-        gap: 55px;
-    }
-
-    #about #about-container #about-assurance {
-        grid-template-columns: 630px 535px;
-    }
-
-    #about #about-container #about-assurance .block {
-        padding: 70px 51px 136px 51px;
-    }
-
-    #gift #gift-container .block {
-        margin-right: 12px;
-    }
-}
-
-@media screen and (max-width: 1126px) {
-    #main #main-container {
-        gap: 50px;
-    }
-}
-
-/*1024 - 1199*/
+/*1143 - 1199*/
 @media screen and (max-width: 1199px) {
     #header-container, #main-container, #about-container,
     #products-container, #gift-container, #form-container,
@@ -73,22 +49,84 @@
     .slick-slide .slick-current .slick-active {
         width: 100%;
     }
+
+    #reviews #reviews-container #all-review .review {
+        max-width: 333px;
+    }
 }
 
-@media screen and (max-width: 1067px) {
+/*1132 - 1142*/
+@media screen and (max-width: 1142px) {
+    #main #main-container {
+        gap: 55px;
+    }
+
+    #about #about-container #about-assurance {
+        grid-template-columns: 590px auto;
+    }
+
+    #about #about-container #about-assurance .block {
+        padding: 70px 51px 136px 51px;
+    }
+
+    #gift #gift-container .block {
+        margin-right: 12px;
+    }
+}
+
+/*1127 - 1131*/
+@media screen and (max-width: 1131px) {
+    #main #main-container {
+        gap: 10px;
+    }
+
     #main #main-container #main-image {
-        left: 28px;
-        top: 116px;
+        left: 0;
+        top: 124px;
+    }
+
+    #about #about-container #about-assurance #block-image2 img {
+        width: 100%;
+    }
+
+    /*#reviews #reviews-container #all-review .review{
+        max-width: 304px;
+    }*/
+}
+
+/*1076 - 1126*/
+@media screen and (max-width: 1126px) {
+    #main #main-container {
+        gap: unset;
+    }
+
+    #main #main-container .card {
+        margin-right: 10px;
+    }
+
+    #reviews #reviews-container #all-review .review {
+        max-width: 325px;
+    }
+}
+
+/*1025 - 1075*/
+@media screen and (max-width: 1075px) {
+    #products #products-container .card-title {
+        font-size: 18px;
+    }
+
+    #reviews #reviews-container #all-review .review {
+        max-width: 305px;
     }
 }
 
 @media screen and (max-width: 1024px) {
 
     #reviews #reviews-container #all-review .review {
-        max-width: 310px;
+        max-width: 304px;
     }
 
-    .splide__pagination {
+    /*.splide__pagination {
         bottom: -78px;
     }
 
@@ -98,11 +136,19 @@
 
     .splide__arrow--next {
         right: 40%;
+    }*/
+    #footer #footer-container #footer-menu {
+        margin-right: unset;
     }
 }
 
-/*768 - 1023*/
+
+/*933 - 1023*/
 @media screen and (max-width: 1023px) {
+
+    .btns-pages {
+        grid-template-columns: 340px 340px;
+    }
 
     #header #menu a {
         margin-left: 20px;
@@ -201,20 +247,28 @@
         padding: 50px 24px 30px 24px;
     }
 
+    #slick-slide00.slick-slide.slick-current.slick-active {
+        width: unset !important;
+    }
+
+    #products #products-container {
+        max-width: 810px;
+    }
+
     #products #products-container h2.block-title {
         text-align: center;
     }
 
     #products #products-container .card {
-        margin: 20px auto;
+        margin: 20px 10px;
     }
 
     .slick-prev {
-        left: 32%;
+        left: 25%;
     }
 
     .slick-next {
-        right: 32%;
+        right: 25%;
     }
 
     #gift #gift-container .about-title {
@@ -258,10 +312,6 @@
         width: 100%;
     }
 
-    #form #form-container #form-info #registration #bike-choice::after {
-        right: 32%;
-    }
-
     #reviews #reviews-container h2.block-title {
         text-align: center;
     }
@@ -270,10 +320,9 @@
         max-width: unset;
     }
 
-    .splide__pagination {
+    /*.splide__pagination {
         bottom: -66px;
-    }
-
+    }*/
     #contacts #contacts-container {
         display: grid;
         grid-template-columns: auto;
@@ -298,8 +347,32 @@
         grid-template-columns: auto auto auto;
         gap: 70px;
     }
+
+    #prev.btns-pages {
+        right: 160px;
+    }
+
+    #next.btns-pages {
+        left: 160px;
+    }
+
+    #prev.reviews-pages {
+        right: 100px;
+    }
+
+    #next.reviews-pages {
+        left: 100px;
+        top: -8px;
+        background: transparent;
+        border: none;
+    }
+
+    #reviews #reviews-container #all-review .review {
+        width: unset !important;
+    }
 }
 
+/*856 - 932*/
 @media screen and (max-width: 932px) {
     #form-image {
         display: none;
@@ -325,8 +398,16 @@
         text-align: center;
     }
 
-    #form #form-container #form-info #registration #bike-choice select {
+    #form #form-container #form-info #registration #bike-choice {
         margin: 0 auto;
+    }
+
+    #form #form-container #form-info #registration #bike-choice .registration-error {
+        margin: -10px 0 15px 0;
+    }
+
+    #form #form-container #form-info #registration #bike-choice select {
+        margin-bottom: 25px;
     }
 
     #form #form-container #form-info #registration #chek #chek-block {
@@ -345,24 +426,20 @@
         margin: 0 0 15px 67px;
     }
 
-    #form #form-container #form-info #registration label {
+    #form #form-container #form-info #registration .registration-input label {
         margin-right: 125px;
     }
 
     #form #form-container #form-info #registration #bike-choice label {
-        margin-right: 189px;
+        margin-right: 190px;
     }
 
     #form #form-container #form-info #registration .checkbox_label {
         margin-right: unset;
     }
 
-    .splide__pagination {
+    /*.splide__pagination {
         bottom: -69px;
-    }
-
-    #form #form-container #form-info #registration #bike-choice::after {
-        right: 20%;
     }
 
     .slick-next {
@@ -379,57 +456,105 @@
 
     .splide__arrow--next {
         right: 39%
-    }
+    }*/
 }
 
+/*831 - 855*/
 @media screen and (max-width: 855px) {
 
-    .slick-next {
+    /*.slick-next {
         right: 29%;
     }
 
     .slick-prev {
         left: 29%;
-    }
-
-    #products #products-container .card {
-        max-width: 330px;
-    }
+    }*/
 }
 
+/*828 - 830*/
 @media screen and (max-width: 830px) {
 
-    .slick-next {
-        right: 27%;
-    }
+    /* .slick-next {
+         right: 27%;
+     }
 
-    .slick-prev {
-        left: 27%;
-    }
+     .slick-prev {
+         left: 27%;
+     }
 
-    .splide__arrow--prev {
-        left: 38%
-    }
+     .splide__arrow--prev {
+         left: 38%
+     }
 
-    .splide__arrow--next {
-        right: 38%
-    }
-
-    #products #products-container .card {
-        max-width: 310px;
-    }
+     .splide__arrow--next {
+         right: 38%
+     }*/
 }
 
+/*768 - 827*/
 @media screen and (max-width: 827px) {
-    .splide__pagination {
+    /*.splide__pagination {
         bottom: -73px;
+    }*/
+    #footer #footer-container #footer-menu {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100px;
+    }
+
+    .footer-menu-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 98px;
+    }
+
+    .product-card {
+        width: 364px !important;
+    }
+
+    #main {
+        margin-bottom: 120px;
+    }
+
+    #about #about-container #about-assurance {
+        margin-top: 120px;
+    }
+
+    #products #products-container h2.block-title {
+        margin-top: 120px;
+    }
+
+    #products {
+        margin-bottom: unset;
+    }
+
+    #form {
+        margin-top: 120px;
+    }
+
+    #reviews {
+        margin-top: 120px;
+        margin-bottom: unset;
+    }
+
+    #contacts {
+        margin-top: 120px;
+    }
+
+    #gift {
+        margin-top: 120px;
     }
 }
 
-/*580 - 767*/
+/*690 - 767*/
 @media screen and (max-width: 767px) {
 
+    #contacts-image iframe {
+        width: 480px;
+    }
+
     #header #header-container {
+        max-width: 493px;
         display: grid;
         grid-template-columns: auto auto;
     }
@@ -452,7 +577,7 @@
         margin-top: 30px;
     }
 
-    #header #menu a:first-child {
+    #header #menu a.active {
         margin-left: unset;
     }
 
@@ -556,7 +681,7 @@
         grid-column-end: unset;
     }
 
-    .slick-next {
+    /*.slick-next {
         right: 24%;
     }
 
@@ -574,57 +699,123 @@
 
     .splide__pagination {
         bottom: -75px;
-    }
-
-    #products #products-container .card {
-        max-width: 270px;
-    }
-
-    #contacts #contacts-container #contacts-image img {
-        width: 100%;
+    }*/
+    #reviews #reviews-container #all-review .review {
+        max-width: 330px;
+        height: 320px;
     }
 
     #contacts #contacts-container #contacts-info #contacts-block {
         gap: 32px;
     }
 
+    #footer #footer-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: unset;
+    }
+
+    #footer-block1 {
+        text-align: center;
+        margin: 0 auto;
+        order: 1;
+    }
+
+    #footer-block1 .footer-text {
+        display: none;
+    }
+
+    #footer-rights {
+        display: none;
+    }
+
+    #footer-block1 .logo {
+        text-align: left;
+    }
+
     #footer #footer-container #footer-menu {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100px;
+        order: 2;
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 42px;
+        margin-bottom: 41px;
+        max-width: 479px;
+        justify-self: center;
+        margin-right: 15px;
+    }
+
+    #footer #footer-container #footer-menu a.footer-text {
+        line-height: 30px;
     }
 
     .footer-menu-item {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 120px;
+    }
+
+
+    #footer-rights2 {
+        display: block;
+        order: 5;
+        font-size: 14px;
+        font-family: "MontserratRegular", sans-serif;
+        color: rgb(78, 28, 14);
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    #footer #footer-container .footer-text.add {
+        display: block;
+        text-align: center;
+        order: 3;
+        margin-bottom: 42px;
+    }
+
+    #footer #footer-container #footer-links {
+        order: 3;
         display: flex;
-        flex-wrap: wrap;
-        width: 98px;
+        margin: 0 auto;
+    }
+
+    #footer-links .footer-text {
+        display: none;
+    }
+
+    #footer-links .link {
+        margin-right: 40px;
+    }
+
+    #footer-links .link:last-child {
+        margin-right: unset;
     }
 }
 
+/*579 - 689*/
 @media screen and (max-width: 689px) {
+
     #products #products-container .card {
-        max-width: 360px;
+
     }
 
-    .slick-prev {
-        left: 10%;
+    /*.slick-prev {
+        left: 16%;
     }
 
     .slick-next {
-        right: 10%;
+        right: 16%;
     }
 
     .slick-dots li {
         width: 20px;
-    }
-
+    }*/
     #reviews #reviews-container #all-review .review {
         margin-right: 20px;
         margin-left: 20px;
         width: 580px;
     }
 
-    .splide__arrow--prev {
+    /*.splide__arrow--prev {
         left: 20%;
     }
 
@@ -634,15 +825,17 @@
 
     .splide__pagination {
         bottom: -66px;
-    }
+    }*/
 }
 
+/*537 - 578*/
 @media screen and (max-width: 578px) {
     #contacts #contacts-container #contacts-info #contacts-block {
         gap: 19px;
     }
 }
 
+/*480 - 536*/
 @media screen and (max-width: 536px) {
 
     #contacts #contacts-container #contacts-info #contacts-block {
@@ -662,28 +855,27 @@
         margin-bottom: 30px;
     }
 
-    .splide__arrow--prev {
-        left: 15%;
-    }
+    /* .splide__arrow--prev {
+         left: 15%;
+     }
 
-    .splide__arrow--next {
-        right: 15%;
-    }
+     .splide__arrow--next {
+         right: 15%;
+     }
 
-    .splide__pagination {
-        bottom: -70px;
-    }
+     .splide__pagination {
+         bottom: -70px;
+     }
 
-    .slick-prev {
-        left: 3%;
-    }
+     .slick-prev {
+         left: 3%;
+     }
 
-    .slick-next {
-        right: 3%;
-    }
-
+     .slick-next {
+         right: 3%;
+     }*/
     #header #menu a {
-        margin-left: 20px;
+        margin-left: 45px;
     }
 
     #call-container .card {
@@ -706,27 +898,39 @@
         display: block;
     }
 
-    #header.menu-open #menu {
-        width: auto;
-        display: grid;
-        grid-template-columns: 320px;
-        justify-self: center;
-    }
-
     #header.menu-open {
         background: rgba(255, 255, 255, 0.8);
     }
 
     #menu {
-        top: 74px;
+        display: none;
         position: fixed;
-        background: rgba(255, 255, 255);
-        z-index: 4;
-        text-align: center;
-        padding: 20px 0 30px 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        padding-top: 30px;
+        background: rgb(255, 255, 255);
+        top: 0;
+        left: 0;
+        z-index: 100;
     }
 
-    #header #menu a{
+    #header.menu-open #menu {
+        display: flex;
+    }
+
+    #header.menu-open #menu #menu-cancel-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    #header #menu a {
         margin-left: unset;
     }
 
@@ -769,7 +973,11 @@
     }
 
     .btn {
-        padding: 22px 85px 22px 85px;
+        padding: 15px 60px 15px 60px;
+    }
+
+    .action {
+        margin-left: unset;
     }
 
     .about-title {
@@ -812,10 +1020,9 @@
         margin-bottom: 40px;
     }
 
-    #products #products-container .product-card {
-        width: 100%;
-    }
-
+    /*#products #products-container .product-card {*/
+    /*    width: 100%;*/
+    /*}*/
     #products #products-container .card-title {
         font-size: 18px;
     }
@@ -829,10 +1036,6 @@
         font-size: 16px;
     }
 
-    #products #products-container .card {
-        padding: 25px 15px 25px 15px;
-    }
-
     #products #products-container .card-image {
         height: unset;
         margin-bottom: 25px;
@@ -843,7 +1046,7 @@
         margin-top: 40px;
     }
 
-    .slick-slide {
+    /*.slick-slide {
         width: unset;
     }
 
@@ -853,8 +1056,7 @@
 
     .slick-dots li button {
         display: none;
-    }
-
+    }*/
     #gift {
         margin-top: 80px;
     }
@@ -918,10 +1120,6 @@
         max-width: 320px;
     }
 
-    #form #form-container #form-info #registration #bike-choice::after {
-        right: 17px;
-    }
-
     #form #form-container #form-info #registration #registration-button .btn {
         padding: 20px 64px;
     }
@@ -937,7 +1135,6 @@
     }
 
     #reviews #reviews-container #all-review .review {
-        padding: 25px 19px 25px 19px;
         margin-top: 42px;
     }
 
@@ -955,17 +1152,26 @@
 
     #reviews #reviews-container #all-review .review-text {
         text-align: center;
+        margin: 20px 20px 30px 20px;
+        line-height: 1.500;
     }
 
-    .splide__arrow {
-        display: none;
+    #reviews #reviews-container #all-review .review-main {
+        margin: 25px 24px 0 20px;
     }
 
-    .splide__pagination__page {
-        height: 10px;
-        width: 10px;
-    }
+    /* .splide__slide img{
+         width: 100%;
+     }
 
+     .splide__arrow {
+         display: none;
+     }
+
+     .splide__pagination__page {
+         height: 10px;
+         width: 10px;
+     }*/
     #contacts {
         margin-top: 120px;
     }
@@ -995,21 +1201,23 @@
     }
 
     #contacts-image {
-        order: 2;
-        margin-top: 30px;
         display: none;
+    }
+
+    #contacts #contacts-container #contacts-info {
+        margin: 0 auto 30px auto;
+        width: 290px;
     }
 
     #contacts #contacts-container #contacts-image2 {
         display: block;
         order: 2;
-        margin-top: 30px;
+        margin: 0 auto;
     }
 
-    #contacts #contacts-container #contacts-image2 img {
-        box-shadow: 10px 10px 0 rgb(242, 225, 221);
-        margin: 0;
-        width: 100%;
+    #contacts #contacts-container #contacts-image2 iframe {
+        width: 290px;
+        height: 400px;
     }
 
     #contacts-info .block-title {
@@ -1115,10 +1323,6 @@
         left: -2px;
     }
 
-    #form #form-container #form-info #registration #bike-choice::after {
-        right: 29px;
-    }
-
     #products #products-container .card {
         height: auto;
     }
@@ -1129,5 +1333,31 @@
 
     #form #form-container #form-info #registration .registration-error, .check-error {
         margin: 0 0 15px 12px;
+    }
+
+    .reviews-dot button {
+        height: 13px;
+        width: 13px;
+        margin: 1px;
+    }
+
+    #prev.reviews-pages {
+        right: 120px;
+    }
+
+    #next.reviews-pages {
+        left: 120px;
+    }
+
+    #contacts #contacts-container #contacts-info {
+        width: unset;
+    }
+
+    #contacts #contacts-container #contacts-image2 iframe {
+        width: 264px;
+    }
+
+    #products #products-container .card {
+        max-width: 260px;
     }
 }

@@ -34,7 +34,7 @@ body {
 }
 
 #header {
-    margin: 35px 0;
+    margin: 35px 0 34px 0;
 }
 
 #header #header-container {
@@ -43,6 +43,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#header #header-container a img {
+    margin-bottom: 4px;
 }
 
 .logo {
@@ -71,13 +75,25 @@ body {
     cursor: pointer;
 }
 
+#header #menu #menu-cancel-close {
+    display: none;
+}
+
 #header #phone {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-#header #burger{
+#header #phone img {
+    margin-bottom: 3px;
+}
+
+#header #phone .hvr-underline-from-center:before {
+
+}
+
+#header #burger {
     display: none;
     color: #A04A33;
     font-size: 40px;
@@ -184,7 +200,7 @@ body {
     text-align: center;
 }
 
-#order #call-error {
+#order p.call-error {
     color: #d31e1e;
     font-family: "MontserratRegular", sans-serif;
     font-size: 10px;
@@ -195,7 +211,7 @@ body {
 }
 
 #main {
-    margin-top: 70px;
+    margin-top: 84px;
     margin-bottom: 171px;
 }
 
@@ -237,7 +253,8 @@ body {
     border-style: solid;
     background-color: rgb(255, 255, 255);
     box-shadow: 10px 10px 0 rgb(242, 225, 221);
-    padding: 40px 43px;
+    padding: 30px 43px;
+    margin-top: 9px;
 }
 
 .card-title {
@@ -253,8 +270,8 @@ body {
     font-size: 16px;
     font-family: "MontserratRegular", sans-serif;
     color: rgb(52, 52, 52);
-    line-height: 1.563;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .card-old-price {
@@ -303,13 +320,14 @@ body {
     font-family: "MontserratMedium", sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 22px 93px 25px 94px;
+    padding: 18px 95px 18px 95px;
     cursor: pointer;
 }
 
 .action {
     display: block;
     text-align: center;
+    margin-left: 15px;
 }
 
 #about #about-container {
@@ -350,16 +368,16 @@ body {
     text-align: left;
     text-shadow: 2px 3px 0 #F2E1DD;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 26px;
 }
 
 .block-text {
     font-size: 16px;
     font-family: "MontserratRegular", sans-serif;
     color: rgb(52, 52, 52);
-    line-height: 1.563;
+    line-height: 1.500;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 #about #about-container #about-company #block-image {
@@ -377,8 +395,8 @@ body {
 
 #about #about-container #about-assurance .block {
     position: relative;
-    right: 67px;
-    bottom: 24px;
+    right: 64px;
+    bottom: 11px;
     padding: 70px 56px 136px 56px;
 }
 
@@ -395,9 +413,12 @@ body {
     margin: 0 auto;
 }
 
+.slick-slider {
+}
+
 #products #products-container h2.block-title {
     margin-top: 160px;
-    margin-bottom: 57px;
+    margin-bottom: 50px;
     padding-bottom: unset;
 }
 
@@ -406,41 +427,46 @@ body {
 }
 
 #products #products-container .card {
-    padding: 23px 15px 20px 15px;
     max-width: 360px;
-    height: 487px;
-    margin: 20px 10px;
+    margin: 0 30px 30px 0;
+    padding: unset;
+    height: 472px;
 }
 
-.hvr-trim::before{
+.hvr-trim::before {
     border: #fff solid 2px;
 }
 
 #products #products-container .card-image {
     text-align: center;
-    margin-bottom: 40px;
-    height: 208px;
+    height: 185px;
+    margin: 23px 15px 40px 15px;
 }
 
-#products #products-container .card-image img{
+#products #products-container .card-image img {
     width: 100%;
 }
 
 #products #products-container .card-title {
     font-size: 20px;
     text-align: left;
-    margin-bottom: 21px;
+    margin: 0 15px 21px 15px;
 }
 
 #products #products-container .card-text {
     text-align: left;
+    margin-left: 15px;
+}
+
+#products #products-container .card-text span {
+    margin-left: 3px;
 }
 
 .price-and-action {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 23px;
+    margin: 20px 15px;
 }
 
 #products #products-container .card-old-price {
@@ -460,8 +486,57 @@ body {
     margin: 0;
 }
 
+.btns-pages {
+    /*display: grid;*/
+    /*grid-template-columns: 250px 250px;*/
+    /*align-items: center;*/
+    /*max-width: 918px;*/
+    position: absolute;
+}
+
+.new-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#next, #prev {
+    border: transparent;
+    border: none;
+    background: none;
+}
+
+#next.btns-pages {
+    left: 104px;
+    bottom: 1px;
+}
+
+#prev.btns-pages {
+    right: 104px;
+    bottom: 1px;
+}
+
+.slick-dots {
+    bottom: 2px;
+    width: auto;
+}
+
+.btn-left:before {
+    content: url("../images/next копия.png");
+}
+
+.btn-right:before {
+    content: url("../images/next копия 2.png");
+}
+
+.btns-pages > * {
+    cursor: pointer;
+}
+
 #products #products-container .btn {
-    padding: 15px 45px 14px 45px;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
 }
 
 #products #products-container .card-price {
@@ -496,16 +571,21 @@ body {
     left: 37%;
 }
 
-.slick-dots {
+/*.slick-dots {
     bottom: -6px;
 }
 
 .slick-dots li {
     bottom: -70px;
-}
+}*/
 
 .slick-prev, .slick-next {
-    top: 104%;
+    top: 101%;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
 }
 
 li.slick-active button {
@@ -525,7 +605,7 @@ li.slick-active button {
     padding-bottom: 10px;
 }
 
-#products #products-container #product-btn{
+#products #products-container #product-btn {
     display: none;
 }
 
@@ -580,7 +660,7 @@ li.slick-active button {
     font-family: "MontserratRegular", sans-serif;
     color: rgb(52, 52, 52);
     line-height: 1.563;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 #form #form-container #form-info #thanks {
@@ -602,8 +682,9 @@ li.slick-active button {
 }
 
 #form #form-container #form-info #registration #bike-choice {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
+    max-width: 285px;
 }
 
 #form #form-container #form-info #registration #bike-choice::after {
@@ -614,8 +695,8 @@ li.slick-active button {
     background-size: 12px 6px;
     background: url("../images/next.png");
     position: absolute;
-    top: 63px;
-    right: 151px;
+    top: 64px;
+    right: 15px;
     z-index: 1;
     pointer-events: none;
 }
@@ -629,7 +710,7 @@ li.slick-active button {
     font-family: MontserratRegular, sans-serif;
     font-size: 16px;
     color: #343434;
-    padding: 21px 42px 21px 15px;
+    padding: 19px 42px 19px 15px;
     outline: none;
     box-sizing: border-box;
     width: 285px;
@@ -648,7 +729,7 @@ li.slick-active button {
     border-width: 1px;
     border-color: rgb(160, 74, 51);
     border-style: solid;
-    padding: 21px 15px 21px 15px;
+    padding: 18px 15px 18px 15px;
     width: 285px;
     box-sizing: border-box;
     margin-bottom: 15px;
@@ -743,7 +824,11 @@ li.slick-active button {
 }
 
 #form #form-container #form-info #registration #registration-button .btn {
-    padding: 20px 65px;
+    padding: 18px 65px;
+}
+
+#form #form-container #form-info #registration #bike-choice .registration-error {
+    margin-top: 15px;
 }
 
 #form #form-container #form-info #registration .registration-error, .check-error {
@@ -772,47 +857,57 @@ li.slick-active button {
 #reviews #reviews-container #all-review {
     display: flex;
     z-index: 6;
+}
+
+#all-review.slick-initialized.slick-slider.slick-dotted {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.reviews-pages {
+    position: absolute;
+}
+
+.reviews-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    margin-top: 20px;
 }
 
-.splide__track {
-    padding-bottom: 10px;
+.reviews-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    list-style: none;
+    padding: unset;
 }
 
-.splide__arrow--prev {
-    left: 43%;
-}
-
-.splide__arrow {
-    top: 117%;
-    background: none;
-}
-
-.splide__arrow svg {
-    fill: #a04a33;
-    height: 22px;
-    width: 13px;
-}
-
-.splide__pagination__page {
+.reviews-dot button {
     background: none;
     border: 1px solid #a04a33;
-    height: 12px;
-    width: 12px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    outline: none;
+    font-size: 0;
 }
 
-.splide__pagination__page.is-active {
-    background: #a04a33;
-    border: 0;
-    transform: none;
+#next.reviews-pages {
+    left: 80px;
+    top: -7px;
+    background: transparent;
+    border: none;
 }
 
-.splide__pagination {
-    bottom: -74px;
-}
-
-.splide__arrow--next {
-    right: 43%;
+#prev.reviews-pages {
+    right: 80px;
+    top: -7px;
+    background: transparent;
+    border: none;
 }
 
 #reviews #reviews-container #all-review .review {
@@ -820,21 +915,24 @@ li.slick-active button {
     border-color: rgb(160, 74, 51);
     border-style: solid;
     background-color: rgb(255, 255, 255);
-    max-width: 350px;
-    padding: 25px 29px 30px 30px;
-    margin-top: 60px;
-    margin-right: 20px;
+    max-width: 346px;
+    height: 320px;
+    margin-top: 50px;
+    margin-right: 30px;
     box-shadow: 10px 10px 0 rgb(242, 225, 221);
+    box-sizing: border-box;
 }
 
-#reviews #reviews-container h2.block-title{
+#reviews #reviews-container h2.block-title {
     padding-bottom: unset;
+    position: relative;
 }
 
 #reviews #reviews-container #all-review .review-main {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin: 25px 29px 0 25px;
 }
 
 #reviews #reviews-container #all-review .review-about {
@@ -860,7 +958,7 @@ li.slick-active button {
     font-family: "MontserratRegular", sans-serif;
     color: rgb(10, 10, 10);
     line-height: 1.786;
-    margin-top: 29px;
+    margin: 20px 30px 30px 30px;
 }
 
 #contacts {
@@ -874,23 +972,21 @@ li.slick-active button {
 }
 
 #contacts #contacts-container #contacts-info {
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
-#contacts #contacts-container #contacts-image img {
+iframe {
     box-shadow: 10px 10px 0 rgb(242, 225, 221);
-    width: 700px;
-    height: 380px;
     margin: 0;
 }
 
-#contacts #contacts-container #contacts-image2{
+#contacts #contacts-container #contacts-image2 {
     display: none;
 }
 
-#contacts #contacts-container #contacts-info .block-title{
-    margin-top: 20px;
-    margin-bottom: 60px;
+#contacts #contacts-container #contacts-info .block-title {
+    margin-top: 28px;
+    margin-bottom: 45px;
     padding-bottom: unset;
 }
 
@@ -899,7 +995,7 @@ li.slick-active button {
     font-family: "MontserratRegular", sans-serif;
     color: rgb(10, 10, 10);
     line-height: 1.563;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 #contacts #contacts-container #contacts-info .contacts-text:last-child {
@@ -927,7 +1023,11 @@ li.slick-active button {
 
 #footer #footer-container #footer-block1 .footer-text {
     font-family: "MontserratMedium", sans-serif;
-    margin-top: 33px;
+    margin-top: 25px;
+}
+
+#footer #footer-container .logo img {
+    margin-bottom: 4px;
 }
 
 #footer #footer-container .logo-text {
@@ -938,10 +1038,11 @@ li.slick-active button {
     display: grid;
     grid-template-columns: 68px 120px;
     grid-column-gap: 123px;
+    margin-right: 100px;
 }
 
 #footer #footer-container #footer-menu a.footer-text {
-    line-height: 40px;
+    margin-bottom: 20px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -950,18 +1051,22 @@ li.slick-active button {
     font-size: 14px;
     font-family: "MontserratRegular", sans-serif;
     color: rgb(78, 28, 14);
-    margin-top: 29px;
+    margin-top: 25px;
+}
+
+#footer #footer-container #footer-links {
+    margin-right: 50px;
 }
 
 #footer #footer-container #footer-links .link {
     display: flex;
     align-items: center;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     cursor: pointer;
     text-decoration: none;
 }
 
-#footer svg{
+#footer svg {
     fill: #FFFFFF;
     width: 30px;
     height: 30px;
@@ -976,22 +1081,23 @@ li.slick-active button {
     height: 1px;
 }
 
-#footer-links .link .footer-text:hover, #footer-links .link:hover svg{
-    fill: rgba(255, 254, 254, 0.8);
-    stroke: rgba(255, 254, 254, 0.8);
-    color: rgba(255, 254, 254, 0.8);
+#footer-links .link:hover svg {
+    fill: rgba(255, 254, 254, 0.6);
 }
 
-#footer-links .link:hover g{
-    stroke: rgba(255, 254, 254, 0.8);
-    color: rgba(255, 254, 254, 0.8);
+#footer-links .link:hover div {
+    color: rgba(255, 254, 254, 0.6);
 }
 
-#footer-rights2{
+#footer-links .link:hover g {
+    stroke: rgba(255, 254, 254, 0.6);
+}
+
+#footer-rights2 {
     display: none;
 }
 
-#footer #footer-container .footer-text.add{
+#footer #footer-container .footer-text.add {
     display: none;
 }
 
@@ -1111,10 +1217,10 @@ li.slick-active button {
     z-index: 10;
 }
 
-#arrow{
+#arrow {
     position: fixed;
     right: 21px;
-    bottom: 185px;
+    bottom: 21px;
     background: #f2e1dd;
     border-radius: 50%;
     padding: 18px 20px;
@@ -1123,20 +1229,20 @@ li.slick-active button {
 }
 
 @keyframes pulse {
-    0%{
+    0% {
         transform: scale(1);
         -moz-transform: scale(1);
         -o-transform: scale(1);
         -webkit-transform: scale(1);
     }
-    50%{
+    50% {
         transform: scale(1.1);
     }
-    100%{
+    100% {
         transform: scale(1);
     }
 }
 
-#arrow svg{
+#arrow svg {
     fill: rgb(78, 28, 14);
 }

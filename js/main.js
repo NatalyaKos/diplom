@@ -11,14 +11,34 @@ $(document).ready(() => {
     });
 
     $('#call-button > button').click(() => {
+        $('.call-error').hide();
+
         let name = $('#nameCall');
         let phone = $('#callPhone');
 
-        if (name.val() && phone.val()) {
+        let hasError = false;
+
+        if (!name.val()) {
+            name.siblings('.call-error').show();
+            name.css('border-color', 'red');
+            hasError = true;
+        } else if (name.val()) {
+            name.css('border-color', 'rgb(160, 74, 51)');
+        }
+        if (!phone.val()) {
+            phone.siblings('.call-error').show();
+            phone.css('border-color', 'red');
+            hasError = true;
+        } else if (phone.val()) {
+            phone.css('border-color', 'rgb(160, 74, 51)');
+        }
+
+        if (!hasError) {
             $.ajax({
-                type: 'post',
+                method: 'POST',
                 url: 'mail.php',
                 data: 'name=' + name.val() + '&phone=' + phone.val(),
+
                 success: () => {
                     //$('#call-sent').show();
                     //$('#call-content').hide();
@@ -26,12 +46,10 @@ $(document).ready(() => {
                 error: () => {
                     $('#call-sent').show();
                     $('#call-content').hide();
-                   // $('#call-container').hide();
-                   // alert('Ошибка заказа звонка. Свяжитесь, пожалуйста, с нами по номеру +7 965 070 8888');
+                    // $('#call-container').hide();
+                    // alert('Ошибка заказа звонка. Свяжитесь, пожалуйста, с нами по номеру +7 965 070 8888');
                 }
-            });
-        } else {
-            $('#call-error').show();
+            })
         }
     });
 
@@ -41,6 +59,10 @@ $(document).ready(() => {
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 3,
+        appendArrows: $('.btns-pages'),
+        prevArrow: '<button id="prev" type="button" class="btns-pages"><i class="btn-left" aria-hidden="true"></i></button>',
+        nextArrow: '<button id="next" type="button" class="btns-pages"> <i class="btn-right" aria-hidden="true"></i></button>',
+        appendDots: $('.new-dots'),
         responsive: [
             {
                 breakpoint: 1025,
@@ -61,10 +83,10 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 690,
+                breakpoint: 691,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 0,
+                    slidesToScroll: 0,
                     infinite: true,
                     dots: true
                 }
@@ -76,28 +98,55 @@ $(document).ready(() => {
         ]
     });
 
-    let splide = new Splide('.splide', {
-        perPage: 3,
-        rewind: true,
-        breakpoints: {
-            1023: {
-                perPage: 2,
+    $('#all-review').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        appendArrows: $('.reviews-pages'),
+        prevArrow: '<button id="prev" type="button" class="reviews-pages"><i class="btn-left" aria-hidden="true"></i></button>',
+        nextArrow: '<button id="next" type="button" class="reviews-pages"> <i class="btn-right" aria-hidden="true"></i></button>',
+        appendDots: $('.reviews-dots'),
+        dotsClass:'reviews-dot',
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
             },
-            689: {
-                perPage: 1,
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
             },
-            481: {
-                perPage: 1,
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-        },
+            //{
+             //   breakpoint: 479,
+              //  settings: 'unslick'
+           // }
+        ]
     });
 
-    splide.mount();
-
-
-    $('.action').click ( function () {
+    $('.action').click(function () {
         let text = $(this).attr('id');
-        $("#bike option[value='" + text + "']").attr ( 'selected' , 'selected' );
+        $("#bike option[value='" + text + "']").attr('selected', 'selected');
     });
 
 
@@ -111,7 +160,6 @@ $(document).ready(() => {
         let checkbox = $('#checkbox')
         let check = $('.checkbox_label');
         let check2 = $('.checkbox_label2');
-        let input = $('.input');
         let checkError = $('.check-error');
 
         let hasError = false;
@@ -126,20 +174,16 @@ $(document).ready(() => {
         if (!name.val()) {
             name.siblings('.registration-error').show();
             name.css('border-color', 'red');
-            input.css('margin-bottom', '5px');
             hasError = true;
         } else if (name.val()) {
             name.css('border-color', 'rgb(160, 74, 51)');
-            input.css('margin-bottom', '15px')
         }
         if (!phone.val()) {
             phone.siblings('.registration-error').show();
             phone.css('border-color', 'red');
-            input.css('margin-bottom', '5px');
             hasError = true;
         } else if (phone.val()) {
             phone.css('border-color', 'rgb(160, 74, 51)');
-            input.css('margin-bottom', '15px')
         }
         if (!checkbox.is(':checked')) {
             check.removeClass('checkbox_label').addClass('checkbox_label2');
@@ -161,7 +205,7 @@ $(document).ready(() => {
                 success: () => {
                     //loader.hide();
                     //$('#thanks').show();
-                   // $('#registration').hide();
+                    // $('#registration').hide();
                 },
                 error: () => {
                     loader.hide();
@@ -206,6 +250,29 @@ $(document).ready(() => {
 
     $('#header #menu a').click(() => {
         $('#header').removeClass('menu-open');
+    });
+
+    $('#menu-cancel-close').click((e) => {
+        if (e.target.id === 'menu-cancel-close') {
+            $('#header').removeClass('menu-open');
+        }
+    });
+
+    let arrow = $('#arrow');
+    arrow.hide();
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() > 200) {
+            arrow.fadeIn();
+        } else {
+            arrow.fadeOut();
+        }
+    });
+
+    arrow.click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
     });
 
 })

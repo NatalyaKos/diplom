@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/hover-min.css">
@@ -23,14 +22,15 @@
             </div>
         </a>
         <div id="menu">
+            <img id="menu-cancel-close" src="images/cancel-2.png" alt="">
             <a href="#products" class="hvr-underline-from-center active">Каталог</a>
             <a href="#about" class="hvr-underline-from-center">О нас</a>
             <a href="#form" class="hvr-underline-from-center">Оформить заказ</a>
             <a href="#contacts" class="hvr-underline-from-center">Контакты</a>
         </div>
-        <div id="phone">
+        <div id="phone" class="hvr-underline-from-center">
             <img src="images/phone-call.png" alt="" class="wow animate__tada">
-            <div id="phone-text" class="hvr-underline-from-center">
+            <div id="phone-text">
                 Заказать звонок
             </div>
         </div>
@@ -49,14 +49,17 @@
                 <label for="nameCall">Ваше имя</label>
                 <div class="call-input">
                     <input type="text" name="name" id="nameCall">
+                    <p class="call-error">
+                        Заполните имя
+                    </p>
                 </div>
                 <label for="callPhone">Ваш телефон</label>
                 <div class="call-input">
                     <input type="text" name="count" id="callPhone">
+                    <p class="call-error">
+                        Заполните телефон
+                    </p>
                 </div>
-                <p id="call-error">
-                    Заполните правильно все поля
-                </p>
             </form>
             <div id="call-button">
                 <button class="btn">Заказать</button>
@@ -170,13 +173,13 @@
                         Велосипед Stels Navigator 130 Lady 3-sp V010 2020
                     </div>
                     <div class="card-text">
-                        Рама: 17 дюймов
+                        Рама: <span>17 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 26 дюймов
+                        Диаметр колеса: <span>26 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 3
+                        Количество скоростей: <span>3</span>
                     </div>
                     <div class="price-and-action">
                         <div class="price">
@@ -200,13 +203,13 @@
                         Женский велосипед Stels Navigator 320 28 (V020) 2018
                     </div>
                     <div class="card-text">
-                        Рама: 19,5 дюймов
+                        Рама: <span>19,5 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 28 дюймов
+                        Диаметр колеса: <span>28 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 3
+                        Количество скоростей: <span>3</span>
                     </div>
                     <div class="price-and-action">
                         <div class="price">
@@ -217,7 +220,8 @@
                                 10 250 руб.
                             </div>
                         </div>
-                        <a href="#form" id="Женский велосипед Stels Navigator 320 28 (V020) 2018" class="action hvr-trim">
+                        <a href="#form" id="Женский велосипед Stels Navigator 320 28 (V020) 2018"
+                           class="action hvr-trim">
                             <button class="btn">Заказать</button>
                         </a>
                     </div>
@@ -230,13 +234,13 @@
                         Велосипед круизер Schwinn Scarlet 2020
                     </div>
                     <div class="card-text">
-                        Рама: 17 дюймов
+                        Рама: <span>17 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 26 дюймов
+                        Диаметр колеса: <span>26 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 3
+                        Количество скоростей: <span>3</span>
                     </div>
                     <div class="price-and-action">
                         <div class="price">
@@ -262,19 +266,20 @@
                         Женский велосипед Stels Navigator 325 28 (Z010) 2018
                     </div>
                     <div class="card-text">
-                        Рама: 20 дюймов
+                        Рама: <span>20 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 28 дюймов
+                        Диаметр колеса: <span>28 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 1
+                        Количество скоростей: <span>1</span>
                     </div>
                     <div class="price-and-action">
                         <div class="card-price">
                             7 760 руб.
                         </div>
-                        <a href="#form" id="Женский велосипед Stels Navigator 325 28 (Z010) 2018" class="action hvr-trim">
+                        <a href="#form" id="Женский велосипед Stels Navigator 325 28 (Z010) 2018"
+                           class="action hvr-trim">
                             <button class="btn">Заказать</button>
                         </a>
                     </div>
@@ -287,13 +292,13 @@
                         Велосипед круизер Schwinn Sivica 7 Women 2020
                     </div>
                     <div class="card-text">
-                        Рама: 18 дюймов
+                        Рама: <span>18 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 27,5 дюймов
+                        Диаметр колеса: <span>27,5 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 7
+                        Количество скоростей: <span>7</span>
                     </div>
                     <div class="price-and-action">
                         <div class="card-price">
@@ -312,13 +317,13 @@
                         Женский велосипед Electra Cruiser 1 Ladies 2020
                     </div>
                     <div class="card-text">
-                        Рама: 17 дюймов
+                        Рама: <span>17 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 26 дюймов
+                        Диаметр колеса: <span>26 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 1
+                        Количество скоростей: <span>1</span>
                     </div>
                     <div class="price-and-action">
                         <div class="card-price">
@@ -339,13 +344,13 @@
                         Женский велосипед Schwinn Talula 2020
                     </div>
                     <div class="card-text">
-                        Рама: 17 дюймов
+                        Рама: <span>17 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 26 дюймов
+                        Диаметр колеса: <span>26 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 1
+                        Количество скоростей: <span>1</span>
                     </div>
                     <div class="price-and-action">
                         <div class="card-price">
@@ -364,13 +369,13 @@
                         Женский велосипед Schwinn Miramar Women 2020
                     </div>
                     <div class="card-text">
-                        Рама: 17 дюймов
+                        Рама: <span>17 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 26 дюймов
+                        Диаметр колеса: <span>26 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 7
+                        Количество скоростей: <span>7</span>
                     </div>
                     <div class="price-and-action">
                         <div class="card-price">
@@ -389,13 +394,13 @@
                         Женский велосипед Stels Navigator 310 Lady 2017
                     </div>
                     <div class="card-text">
-                        Рама: 18 дюймов
+                        Рама: <span>18 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 28 дюймов
+                        Диаметр колеса: <span>28 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 1
+                        Количество скоростей: <span>1</span>
                     </div>
                     <div class="price-and-action">
                         <div class="price">
@@ -421,13 +426,13 @@
                         Велосипед Stels Navigator 130 Lady 3-sp V010 2020
                     </div>
                     <div class="card-text">
-                        Рама: 17 дюймов
+                        Рама: <span>17 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 26 дюймов
+                        Диаметр колеса: <span>26 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 3
+                        Количество скоростей: <span>3</span>
                     </div>
                     <div class="price-and-action">
                         <div class="price">
@@ -451,13 +456,13 @@
                         Женский велосипед Stels Navigator 320 28 (V020) 2018
                     </div>
                     <div class="card-text">
-                        Рама: 19,5 дюймов
+                        Рама: <span>19,5 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 28 дюймов
+                        Диаметр колеса: <span>28 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 3
+                        Количество скоростей: <span>3</span>
                     </div>
                     <div class="price-and-action">
                         <div class="price">
@@ -481,13 +486,13 @@
                         Велосипед круизер Schwinn Scarlet 2020
                     </div>
                     <div class="card-text">
-                        Рама: 17 дюймов
+                        Рама: <span>17 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Диаметр колеса: 26 дюймов
+                        Диаметр колеса: <span>26 дюймов</span>
                     </div>
                     <div class="card-text">
-                        Количество скоростей: 3
+                        Количество скоростей: <span>3</span>
                     </div>
                     <div class="price-and-action">
                         <div class="price">
@@ -1165,6 +1170,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="new-dots">
+            <div class="btns-pages"></div>
         </div>
         <div id="product-btn">
             <button class="btn">Показать ещё 3 из 26</button>
@@ -1290,237 +1298,236 @@
 <div id="reviews">
     <div id="reviews-container">
         <h2 class="block-title">Отзывы</h2>
-        <div id="all-review" class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <div class="review splide__slide wow animate__fadeInTopLeft">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/photo-1541577141970-eebc83ebe30e.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Владимир Д.</div>
-                                <div class="review-bike-name">Stels Navigator 320 28 (V020)</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Подарил велосипед маме для дачи. У нас там дороги ровные, поэтому байк едет
-                            просто отлично. В плане удобства все устраивает. Багажника аж два, теперь в магазин ездить -
-                            не проблема.
-                        </div>
+        <div id="all-review">
+            <div class="review wow animate__fadeInTopLeft">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/photo-1541577141970-eebc83ebe30e.png" alt="">
                     </div>
-                    <div class="review splide__slide wow animate__fadeInDown">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/photo-1546961329-78bef0414d7c.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Елена А.</div>
-                                <div class="review-bike-name">Stels Navigator 320 28 (V020)</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Хороший, удобный крузер для неспешных покатушек по городу.
-                            Отдельное спасибо консультантам, выслушали все мои пожелания и помогли подобрать велосипед,
-                            с которого я теперь не слезаю.
-                        </div>
+                    <div class="review-about">
+                        <div class="review-title">Владимир Д.</div>
+                        <div class="review-bike-name">Stels Navigator 320 28 (V020)</div>
                     </div>
-                    <div class="review splide__slide wow animate__fadeInTopRight">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/photo-1476657680631-c07285ff2581.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Дмитрий Н.</div>
-                                <div class="review-bike-name">Круизер Schwinn Scarlet (2020)</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Покупал в подарок жене. Спасибо сотрудникам магазина за оперативность и
-                            отзывчивость! Великолепно катится, передачи переключаются легко и просто. Красивый и
-                            стильный.
-                        </div>
-                    </div>
-                    <div class="review splide__slide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/vadim-artyukhin-JWS97LFrpcM-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Марина К.</div>
-                                <div class="review-bike-name">Велосипед Electra Cruiser 1 Ladies 2020</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Хочу поблагодарить сотрудников Retro bicycles за качественную консультацию по
-                            выбору велосипеда. Удачи вам, и хороших Покупателей!
-                        </div>
-                    </div>
-                    <div class="review splide__slide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/hans-mendoza-NOMEabTIxk4-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Наталья Е.</div>
-                                <div class="review-bike-name">Велосипед круизер Schwinn Scarlet 2020</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Отличный магазин, очень приветливые консультанты. Дмитрий очень подробно рассказал обо
-                            всех моделях велосипедов. Безумно рады покупке!
-                        </div>
-                    </div>
-                    <div class="review splide__slide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/daniel-capelani-gRslJX1S4h0-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Николай Т.</div>
-                                <div class="review-bike-name">Stels Navigator 320 28 (V020) 2018</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Благодарю за хорошее и очень грамотное обслуживание. Желаю всяческих успехов.
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/fabian-centeno-Hkavt2MAOEc-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Олег С.</div>
-                                <div class="review-bike-name">Stels Navigator 325 28 (Z010) 2018</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Спасибо консультанту Александру за помощь в выборе велосипеда. Удачи в
-                            бизнесе. Я лично – доволен!
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/ik-invadingkingdom-swZl5qH7Y9o-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Алла Х.</div>
-                                <div class="review-bike-name">Schwinn Talula 2020</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Очень понравилось обслуживание, ассортимент, цены и приятные специалисты Вашего
-                            магазина. Отдельная благодарность Николаю за полную консультацию. Спасибо.
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Ярослав К.</div>
-                                <div class="review-bike-name">Stels Navigator 310 Lady 2017</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Спасибо БОЛЬШОЕ!!! Очень помогли в выборе велосипеда. Отдельное спасибо консультанту Никите
-                            за помощь в выборе велика!
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/leyli-nova-gd0qpyteVFY-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Татьяна А.</div>
-                                <div class="review-bike-name">Schwinn Miramar Women 2020</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            У вас очень удобный сайт в Internet. Особая благодарность Борису, консультация по телефону с
-                            которым определила мой выбор места покупки велосипеда.
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/mateus-campos-felipe-PbUoOGcR0vk-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Оксана Д.</div>
-                                <div class="review-bike-name">Stels Navigator 130 Lady 3-sp V010 2020</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Очень классный магазин! Покупаю здесь уже второй велосипед. Очень довольна сервисом,
-                            внимательностью и профессионализмом продавцов! Большое спасибо!
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/paul-schafer-NDcN_8JiAqw-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Виталий Р.</div>
-                                <div class="review-bike-name">Stels Navigator 320 28 (V020) 2018</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Приобрел себе 5-ый по счету велосипед. Большое спасибо консультанту Николаю за помощь в
-                            выборе.
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/stephanie-cook-NDCy2-9JhUs-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Степан Ч.</div>
-                                <div class="review-bike-name">Schwinn Sivica 7 Women 2020</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Спасибо консультантам за помощь в приобретении Schwinn Sivica 7 Women 2020. Несмотря, на то,
-                            что я зануда :) Меня «выдержал» Николай. Удачи.
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/myron-edwards-IzCf5vuSnLM-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Светлана Р.</div>
-                                <div class="review-bike-name">Electra Cruiser 1 Ladies 2020</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Спасибо продавцу Андрею за хорошую работу. Быстро выбрали велосипед и очень довольны! УРА!
-                        </div>
-                    </div>
-                    <div class="review splide__slide hide">
-                        <div class="review-main">
-                            <div class="review-image">
-                                <img src="images/toa-heftiba-ANNsvl-6AG0-unsplash.png" alt="">
-                            </div>
-                            <div class="review-about">
-                                <div class="review-title">Ольга Ф.</div>
-                                <div class="review-bike-name">Круизер Schwinn Scarlet 2020</div>
-                            </div>
-                        </div>
-                        <div class="review-text">
-                            Хороший магазин, понравилось обслуживание, очень приятно общаться с консультантами, все
-                            подсказали, рассказали.
-                        </div>
-                    </div>
-                </ul>
+                </div>
+                <div class="review-text">
+                    Подарил велосипед маме для дачи. У нас там дороги ровные, поэтому байк едет
+                    просто отлично. В плане удобства все устраивает. Багажника аж два, теперь в магазин ездить -
+                    не проблема.
+                </div>
             </div>
+            <div class="review wow animate__fadeInDown">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/photo-1546961329-78bef0414d7c.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Елена А.</div>
+                        <div class="review-bike-name">Stels Navigator 320 28 (V020)</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Хороший, удобный крузер для неспешных покатушек по
+                    Отдельное спасибо консультантам, выслушали все мои пожелания и помогли подобрать велосипед,
+                    с которого я теперь не слезаю.
+                </div>
+            </div>
+            <div class="review wow animate__fadeInTopRight">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/photo-1476657680631-c07285ff2581.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Дмитрий Н.</div>
+                        <div class="review-bike-name">Круизер Schwinn Scarlet (2020)</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Покупал в подарок жене. Спасибо сотрудникам магазина за оперативность и
+                    отзывчивость! Великолепно катится, передачи переключаются легко и просто. Красивый и
+                    стильный.
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/vadim-artyukhin-JWS97LFrpcM-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Марина К.</div>
+                        <div class="review-bike-name">Велосипед Electra Cruiser 1 Ladies 2020</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Хочу поблагодарить сотрудников Retro bicycles за качественную консультацию по
+                    выбору велосипеда. Удачи вам, и хороших Покупателей!
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/hans-mendoza-NOMEabTIxk4-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Наталья Е.</div>
+                        <div class="review-bike-name">Велосипед круизер Schwinn Scarlet 2020</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Отличный магазин, очень приветливые консультанты. Дмитрий очень подробно рассказал обо
+                    всех моделях велосипедов. Безумно рады покупке!
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/daniel-capelani-gRslJX1S4h0-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Николай Т.</div>
+                        <div class="review-bike-name">Stels Navigator 320 28 (V020) 2018</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Благодарю за хорошее и очень грамотное обслуживание. Желаю всяческих успехов.
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/fabian-centeno-Hkavt2MAOEc-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Олег С.</div>
+                        <div class="review-bike-name">Stels Navigator 325 28 (Z010) 2018</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Спасибо консультанту Александру за помощь в выборе велосипеда. Удачи в
+                    бизнесе. Я лично – доволен!
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/ik-invadingkingdom-swZl5qH7Y9o-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Алла Х.</div>
+                        <div class="review-bike-name">Schwinn Talula 2020</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Очень понравилось обслуживание, ассортимент, цены и приятные специалисты Вашего
+                    магазина. Отдельная благодарность Николаю за полную консультацию. Спасибо.
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Ярослав К.</div>
+                        <div class="review-bike-name">Stels Navigator 310 Lady 2017</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Спасибо БОЛЬШОЕ!!! Очень помогли в выборе велосипеда. Отдельное спасибо консультанту Никите
+                    за помощь в выборе велика!
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/leyli-nova-gd0qpyteVFY-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Татьяна А.</div>
+                        <div class="review-bike-name">Schwinn Miramar Women 2020</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    У вас очень удобный сайт в Internet. Особая благодарность Борису, консультация по телефону с
+                    которым определила мой выбор места покупки велосипеда.
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/mateus-campos-felipe-PbUoOGcR0vk-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Оксана Д.</div>
+                        <div class="review-bike-name">Stels Navigator 130 Lady 3-sp V010 2020</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Очень классный магазин! Покупаю здесь уже второй велосипед. Очень довольна сервисом,
+                    внимательностью и профессионализмом продавцов! Большое спасибо!
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/paul-schafer-NDcN_8JiAqw-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Виталий Р.</div>
+                        <div class="review-bike-name">Stels Navigator 320 28 (V020) 2018</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Приобрел себе 5-ый по счету велосипед. Большое спасибо консультанту Николаю за помощь в
+                    выборе.
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/stephanie-cook-NDCy2-9JhUs-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Степан Ч.</div>
+                        <div class="review-bike-name">Schwinn Sivica 7 Women 2020</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Спасибо консультантам за помощь в приобретении Schwinn Sivica 7 Women 2020. Несмотря, на то,
+                    что я зануда :) Меня «выдержал» Николай. Удачи.
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/myron-edwards-IzCf5vuSnLM-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Светлана Р.</div>
+                        <div class="review-bike-name">Electra Cruiser 1 Ladies 2020</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Спасибо продавцу Андрею за хорошую работу. Быстро выбрали велосипед и очень довольны! УРА!
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-main">
+                    <div class="review-image">
+                        <img src="images/toa-heftiba-ANNsvl-6AG0-unsplash.png" alt="">
+                    </div>
+                    <div class="review-about">
+                        <div class="review-title">Ольга Ф.</div>
+                        <div class="review-bike-name">Круизер Schwinn Scarlet 2020</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Хороший магазин, понравилось обслуживание, очень приятно общаться с консультантами, все
+                    подсказали, рассказали.
+                </div>
+            </div>
+        </div>
+        <div class="reviews-dots">
+            <div class="reviews-pages"></div>
         </div>
     </div>
 </div>
@@ -1528,10 +1535,16 @@
 <div id="contacts">
     <div id="contacts-container">
         <div id="contacts-image">
-            <img src="images/Слой%201.png" alt="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5334350651656!2d30.343164651533783!3d59.93988378178765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310a88e3983d%3A0xba83dc1722086db1!2z0JzQvtGF0L7QstCw0Y8g0YPQuy4sIDM4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMDI4!5e0!3m2!1sru!2sru!4v1648392185235!5m2!1sru!2sru"
+                    width="690" height="380" style="border:1px rgb(160, 74, 51) solid;" allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div id="contacts-image2">
-            <img src="images/карта2.png" alt="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5334350651656!2d30.343164651533783!3d59.93988378178765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310a88e3983d%3A0xba83dc1722086db1!2z0JzQvtGF0L7QstCw0Y8g0YPQuy4sIDM4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMDI4!5e0!3m2!1sru!2sru!4v1648392185235!5m2!1sru!2sru"
+                    width="290" height="400" style="border:1px rgb(160, 74, 51) solid;" allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div id="contacts-info">
             <h2 class="block-title">Контакты</h2>
