@@ -779,7 +779,7 @@
         margin-right: 20px;
         margin-left: 20px;
         /*width: 580px;*/
-        height: 700px;
+        height: 450px;
     }
 
     .product-card {
@@ -798,14 +798,14 @@
     }
 
     #reviews #reviews-container #all-review .review {
-        height: 700px;
+        height: 450px;
     }
 }
 
 @media screen and (max-width: 550px){
 
     #reviews #reviews-container #all-review{
-        margin: 0 auto;
+        justify-content: center;
     }
 
     #reviews #reviews-container #all-review .review {
@@ -859,8 +859,6 @@
         left: 113px;
     }
 }
-
-
 
 
 /*320 - 479*/
