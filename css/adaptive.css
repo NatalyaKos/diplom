@@ -790,13 +790,6 @@
         margin-right: unset;
     }
 
-    .product-card {
-        margin: 0 auto;
-    }
-
-    .product-btn {
-        text-align: center;
-    }
 }
 
 /*579 - 689*/
@@ -835,6 +828,14 @@
     .splide__pagination {
         bottom: -66px;
     }*/
+
+    .product-card {
+        margin: 0 auto;
+    }
+
+    .product-btn {
+        text-align: center;
+    }
 }
 
 /*537 - 578*/
