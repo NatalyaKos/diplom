@@ -857,6 +857,7 @@ li.slick-active button {
 #reviews #reviews-container #all-review {
     display: flex;
     z-index: 6;
+    justify-content: center;
 }
 
 #all-review.slick-initialized.slick-slider.slick-dotted {
