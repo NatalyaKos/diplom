@@ -779,7 +779,7 @@
         margin-right: 20px;
         margin-left: 20px;
         /*width: 580px;*/
-        height: 700px;
+        height: 800px;
     }
 
     .product-card {
@@ -797,8 +797,12 @@
         gap: 19px;
     }
 
+    #reviews #reviews-container #all-review{
+        margin: 0 auto;
+    }
+
     #reviews #reviews-container #all-review .review {
-        height: 700px;
+        height: 800px;
     }
 }
 
@@ -806,7 +810,6 @@
 
     #reviews #reviews-container #all-review .review {
         height: 320px;
-        margin: 50px auto;
     }
 
     .reviews-dot button {
