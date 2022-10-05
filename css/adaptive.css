@@ -804,12 +804,9 @@
 
 @media screen and (max-width: 550px){
 
-    #reviews #reviews-container #all-review{
-        justify-content: center;
-    }
-
     #reviews #reviews-container #all-review .review {
         height: 320px;
+        justify-content: center;
     }
 
     .reviews-dot button {
@@ -994,9 +991,6 @@
         margin-bottom: 40px;
     }
 
-    /*#products #products-container .product-card {*/
-    /*    width: 100%;*/
-    /*}*/
     #products #products-container .card-title {
         font-size: 18px;
     }
@@ -1020,17 +1014,14 @@
         margin-top: 40px;
     }
 
-    /*.slick-slide {
-        width: unset;
+    .product-card {
+        margin: 0 auto;
     }
 
-    .slick-prev, .slick-next {
-        display: none !important;
+    #product-btn {
+        text-align: center;
     }
 
-    .slick-dots li button {
-        display: none;
-    }*/
     #gift {
         margin-top: 80px;
     }
