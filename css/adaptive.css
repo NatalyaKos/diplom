@@ -799,41 +799,18 @@
 
     }
 
-    /*.slick-prev {
-        left: 16%;
-    }
-
-    .slick-next {
-        right: 16%;
-    }
-
-    .slick-dots li {
-        width: 20px;
-    }*/
     #reviews #reviews-container #all-review .review {
         margin-right: 20px;
         margin-left: 20px;
         width: 580px;
-        height: 280px;
+        height: 400px;
     }
-
-    /*.splide__arrow--prev {
-        left: 20%;
-    }
-
-    .splide__arrow--next {
-        right: 20%;
-    }
-
-    .splide__pagination {
-        bottom: -66px;
-    }*/
 
     .product-card {
         margin: 0 auto;
     }
 
-    .product-btn {
+    #product-btn {
         text-align: center;
     }
 }
