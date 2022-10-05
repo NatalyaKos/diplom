@@ -806,7 +806,8 @@
 
     #reviews #reviews-container #all-review .review {
         height: 320px;
-        justify-items: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .reviews-dot button {
@@ -1310,7 +1311,7 @@
         width: 264px;
     }
 
-    /*#products #products-container .card {*/
-    /*    max-width: 260px;*/
-    /*}*/
+    #products #products-container .card {
+        max-width: 260px;
+    }
 }
