@@ -779,7 +779,7 @@
         margin-right: 20px;
         margin-left: 20px;
         /*width: 580px;*/
-        height: 400px;
+        height: 500px;
     }
 
     .product-card {
@@ -795,6 +795,10 @@
 @media screen and (max-width: 578px) {
     #contacts #contacts-container #contacts-info #contacts-block {
         gap: 19px;
+    }
+
+    #reviews #reviews-container #all-review .review {
+        height: 500px;
     }
 }
 
