@@ -1312,6 +1312,6 @@
     }
 
     #products #products-container .card {
-        max-width: 260px;
+        width: 280px;
     }
 }
