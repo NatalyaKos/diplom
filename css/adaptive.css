@@ -806,7 +806,7 @@
 
     #reviews #reviews-container #all-review .review {
         height: 320px;
-        justify-content: center;
+        margin: 50px auto;
     }
 
     .reviews-dot button {
