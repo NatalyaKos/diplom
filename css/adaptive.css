@@ -806,7 +806,7 @@
 
     #reviews #reviews-container #all-review .review {
         height: 320px;
-        margin: 50px auto;
+        justify-items: center;
     }
 
     .reviews-dot button {
@@ -1014,7 +1014,7 @@
         margin-top: 40px;
     }
 
-    .product-card {
+    #products #products-container .product-card {
         margin: 0 auto;
     }
 
@@ -1125,18 +1125,6 @@
         margin: 25px 24px 0 20px;
     }
 
-    /* .splide__slide img{
-         width: 100%;
-     }
-
-     .splide__arrow {
-         display: none;
-     }
-
-     .splide__pagination__page {
-         height: 10px;
-         width: 10px;
-     }*/
     #contacts {
         margin-top: 120px;
     }
@@ -1322,7 +1310,7 @@
         width: 264px;
     }
 
-    #products #products-container .card {
-        max-width: 260px;
-    }
+    /*#products #products-container .card {*/
+    /*    max-width: 260px;*/
+    /*}*/
 }
