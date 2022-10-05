@@ -129,7 +129,7 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 551,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
